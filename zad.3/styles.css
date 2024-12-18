@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    background-color: rgb(25, 25, 25);
+    color: white;
+}
+
+div {
+    margin: 1rem;
+    width: fit-content;
+}
+
+button {
+    appearance: none;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background: none;
+    color: white;
+}
+
+ul {
+    position: absolute;
+    top: 1rem;
+    z-index: -1;
+    display: none;
+    list-style: none;
+    padding: 5rem 3rem 1rem 1rem;
+    margin: 0;
+    font-family: system-ui;
+    font-size: 1.3rem;
+}
+
+li {
+    padding: 0.5rem 0rem;
+}
+
+button:hover + ul {
+    display: block;
+    color: black;
+    background-color: rgb(225, 225, 225);
+}
+
+button:hover > svg {
+    stroke: rgb(25, 25, 25);
+}
