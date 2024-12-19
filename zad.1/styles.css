@@ -17,7 +17,7 @@ body {
     flex-direction: column;
     gap: 0.5rem;
     height: 100%;
-    margin: 0.5rem 20rem;
+    margin: 0.5rem clamp(2rem, 20%, 20rem);
 }
 
 .container > div {
