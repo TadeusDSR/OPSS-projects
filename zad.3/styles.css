@@ -66,9 +66,17 @@ line {
 }
 
 #dropdown {
+    opacity: 0;
     width: fit-content;
     margin-left: calc(2rem + 10px);
     color: var(--dark);
     font-family: system-ui;
     font-size: 1.2rem;
+    translate: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+#menu:hover + #dropdown {
+    opacity: 1;
+    translate: 0;
 }
