@@ -1,45 +1,38 @@
+:root {
+    --gray: rgb(210, 210, 210);
+    --dark: rgb(25, 25, 25);
+}
+
 body {
+    overflow: hidden;
     margin: 0;
-    background-color: rgb(25, 25, 25);
-    color: white;
+    background-color: var(--dark);
 }
 
-div {
-    margin: 1rem;
-    width: fit-content;
+#menu {
+    width: 48px;
+    height: 48px;
+    margin: 2rem;
 }
 
-button {
-    appearance: none;
-    width: 100%;
-    padding: 1rem;
-    border: none;
-    background: none;
-    color: white;
-}
-
-ul {
+#bg {
+    display: flex;
     position: absolute;
-    top: 1rem;
+    top: 0;
     z-index: -1;
-    display: none;
-    list-style: none;
-    padding: 5rem 3rem 1rem 1rem;
-    margin: 0;
-    font-family: system-ui;
-    font-size: 1.3rem;
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
 }
 
-li {
-    padding: 0.5rem 0rem;
+#bg div {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    transition: all 0.4s ease-in-out;
 }
 
-button:hover + ul {
-    display: block;
-    color: black;
-    background-color: rgb(225, 225, 225);
-}
-
-button:hover > svg {
-    stroke: rgb(25, 25, 25);
+#menu:hover + #bg div {
+    transform: scale(90);
+    background-color: var(--gray);
 }
