@@ -72,7 +72,7 @@ line {
     color: var(--dark);
     font-family: system-ui;
     font-size: 1.2rem;
-    translate: 1rem;
+    translate: 2rem;
     transition: all 0.2s ease-in-out;
 }
 
