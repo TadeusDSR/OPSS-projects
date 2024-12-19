@@ -36,3 +36,31 @@ body {
     transform: scale(90);
     background-color: var(--gray);
 }
+
+line {
+    stroke: var(--gray);
+    transform-origin: center;
+    transition: all 0.2s ease-in-out;
+}
+
+#menu:hover line {
+    stroke: var(--dark);
+}
+
+#menu:hover #rotate-left {
+    transform: rotate(45deg);
+}
+
+#menu:hover #rotate-right {
+    transform: rotate(-45deg);
+}
+
+#menu:hover line:first-child {
+    translate: 0px 8px;
+    opacity: 0;
+}
+
+#menu:hover line:last-child {
+    translate: 0px -8px;
+    opacity: 0;
+}
