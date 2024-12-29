@@ -1,5 +1,12 @@
-.menu-option {
+.container {
+    position: relative;
     display: flex;
+    width: fit-content;
+}
+
+.menu-option, .sub-option {
+    display: flex;
+    gap: 0.7rem;
     justify-content: space-between;
     align-items: center;
     min-width: fit-content;
@@ -7,17 +14,40 @@
     padding: 0.7rem 0.7rem 0.7rem 1rem;
     background-color: rgb(40, 40, 40);
     border-right: 0.3rem solid rgb(15, 150, 90);
+    transition: all 0.1s ease-in-out;
 }
 
-.menu-option:hover {
-    cursor: pointer;
-    background-color: rgb(15, 150, 90);
-}
-
-.menu-option p {
+p {
     margin: 0;
     text-wrap: nowrap;
     font-family: system-ui;
     font-weight: bold;
     color: rgb(230, 230, 230);
+}
+
+.sub-menu {
+    position: absolute;
+    left: 100%;
+    display: none;
+}
+
+.sub-option {
+    border-bottom: 2px solid rgb(13, 121, 72);
+}
+
+.sub-option > svg {
+    display: none;
+}
+
+.menu-option:hover, .sub-option{
+    cursor: pointer;
+    background-color: rgb(15, 150, 90);
+}
+
+.container:hover .sub-menu {
+    display: block;
+}
+
+.sub-option:hover > svg{
+    display: block;
 }
