@@ -1,3 +1,7 @@
+:root {
+    --accent-color: rgb(15, 150, 90);
+}
+
 .container {
     position: relative;
     display: flex;
@@ -13,7 +17,7 @@
     width: 10vw;
     padding: 0.7rem 0.7rem 0.7rem 1rem;
     background-color: rgb(40, 40, 40);
-    border-right: 0.3rem solid rgb(15, 150, 90);
+    border-right: 0.3rem solid var(--accent-color);
     transition: all 0.1s ease-in-out;
 }
 
@@ -41,7 +45,7 @@ p {
 
 .menu-option:hover, .sub-option{
     cursor: pointer;
-    background-color: rgb(15, 150, 90);
+    background-color: var(--accent-color);
 }
 
 .container:hover .sub-menu {
