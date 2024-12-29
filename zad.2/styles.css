@@ -1,0 +1,23 @@
+.menu-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: fit-content;
+    width: 10vw;
+    padding: 0.7rem 0.7rem 0.7rem 1rem;
+    background-color: rgb(40, 40, 40);
+    border-right: 0.3rem solid rgb(15, 150, 90);
+}
+
+.menu-option:hover {
+    cursor: pointer;
+    background-color: rgb(15, 150, 90);
+}
+
+.menu-option p {
+    margin: 0;
+    text-wrap: nowrap;
+    font-family: system-ui;
+    font-weight: bold;
+    color: rgb(230, 230, 230);
+}
